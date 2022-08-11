@@ -5,240 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram</title>
-    <style>
-      .navibar span {
-        color: gray;
-        padding: 5px 10px;
-        font-size: 12px;
-      }
-      input {
-        all: unset;
-        padding: 10px;
-        border: 1px solid rgb(219, 219, 219);
-        margin-top: 8px;
-        background-color: rgb(250, 250, 250);
-        border-radius: 3px;
-      }
-      input:focus input:active {
-        border: 1px solid rgba(38, 38, 38, 0.4);
-      }
-      * {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif !important;
-        box-sizing: border-box;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="margin: 0px; background-color: #fafafa">
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 25px 0;
-      "
-    >
-      <div
-        class="left"
-        style="
-          width: 430px;
-          height: 650px;
-          background-image: url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
-          background-repeat: no-repeat;
-        "
-      >
-        <img
-          src="/phone_screenshot.png"
-          alt=""
-          style="position: relative; top: 26px; left: 156px"
-        />
+  <body>
+    <div class="div-page">
+      <div class="div-left">
+        <img id="phone-screeenshot" src="/phone_screenshot.png" alt="" />
       </div>
-      <div class="right">
-        <div>
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              flex-wrap: nowrap;
-              align-content: center;
-              justify-content: center;
-              align-items: stretch;
-              width: 350px;
-              background-color: white;
-              border: 1px solid rgb(219, 219, 219);
-              font-family: -apple-system;
-              padding: 20px 40px;
-              margin: 10px 20px;
-            "
-          >
-            <img
-              src="/instagram_name_logo.png"
-              style="padding: 20px 50px 20px 50px"
-            />
-            <input type="text" placeholder="Phone number, username, or email" />
-            <input type="password" placeholder="Password" />
-            <div
-              style="
-                background-color: rgba(0, 149, 246, 0.3);
-                color: white;
-                padding: 5px;
-                margin-top: 8px;
-                text-align: center;
-                border-radius: 4px;
-              "
-            >
-              Log In
-            </div>
-            <div
-              style="
-                display: flex;
-                margin-top: 30px;
-                flex-direction: row;
-                align-items: center;
-              "
-            >
-              <div
-                style="
-                  background-color: rgb(219, 219, 219);
-                  height: 1px;
-                  width: 150px;
-                "
-              ></div>
-              <div
-                style="
-                  font-size: 13px;
-                  font-weight: 600;
-                  color: rgb(219, 219, 219);
-                  padding: 0 20px 0 20px;
-                "
-              >
-                OR
-              </div>
-              <div
-                style="
-                  background-color: rgb(219, 219, 219);
-                  height: 1px;
-                  width: 150px;
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                text-align: center;
-                margin-top: 20px;
-                color: rgb(56, 81, 133);
-                font-weight: 600;
-                font-size: 14px;
-              "
-            >
-              <span
-                style="
-                  display: inline-block;
-                  margin-right: 8px;
-                  position: relative;
-                  top: 2px;
-                  background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
-                  background-repeat: no-repeat;
-                  background-position: -414px -259px;
-                  height: 16px;
-                  width: 16px;
-                  transform: scale(1.4);
-                "
-              ></span>
-              <span>Log in with Facebook</span>
-            </div>
-            <div
-              style="
-                color: rgb(0, 55, 107);
-                text-align: center;
-                padding-top: 20px;
-                font-size: 12px;
-              "
-            >
-              Forgot password?
-            </div>
+      <div class="div-right">
+        <div class="div-right-style">
+          <img id="instagram_name_logo" src="/instagram_name_logo.png" />
+          <input type="text" placeholder="Phone number, username, or email" />
+          <input type="password" placeholder="Password" />
+          <div class="div-login">Log In</div>
+          <div class="div-line-or-line">
+            <div class="div-line"></div>
+            <div class="div-or">OR</div>
+            <div class="div-line"></div>
           </div>
-          <div
-            style="
-              background-color: white;
-              border: 1px solid rgb(219, 219, 219);
-              padding: 20px;
-              margin: 0 20px 10px;
-              text-align: center;
-              font-size: 14px;
-              line-height: 18px;
-            "
-          >
-            Don't have account?
-            <span style="color: rgba(0, 149, 246, 1); font-weight: 600"
-              >Sign up</span
-            >
+          <div class="div-login-with-fb-link">
+            <span class="fb-logo"></span>
+            <span>Log in with Facebook</span>
           </div>
-          <div style="text-align: center; font-size: 14px">Get the app.</div>
-          <div style="text-align: center; margin-top: 20px">
-            <img
-              style="height: 40px; margin: 3px"
-              src="/appstore.png"
-              alt=""
-              style="width: 150px"
-            />
-            <img
-              style="height: 40px; margin: 3px"
-              src="/playstore.png"
-              alt=""
-              style="width: 150px"
-            />
-          </div>
+          <div class="div-forgot-pw">Forgot password?</div>
+        </div>
+        <div class="div-dont-have-account">
+          Don't have account?
+          <span id="span-signup">Sign up</span>
+        </div>
+        <div class="div-get-the-app">Get the app.</div>
+        <div class="div-app-store-logo">
+          <img id="appstore-logo" src="/appstore.png" alt="apple store logo" />
+          <img id="appstore-logo" src="/playstore.png" alt="play store logo" />
         </div>
       </div>
     </div>
-    <div style="height: 10%">
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          text-align: center;
-          justify-content: center;
-          max-width: 920px;
-          margin: auto;
-        "
-        class="navibar"
-      >
-        <span>Meta</span>
-        <span>About</span>
-        <span>Blog</span>
-        <span>Jobs</span>
-        <span>Help</span>
-        <span>API</span>
-        <span>Privacy</span>
-        <span>Terms</span>
-        <span>Top Accounts</span>
-        <span>Hashtags</span>
-        <span>Locations</span>
-        <span>Instagram Lite</span>
-        <span>Contact Uploading & Non-Users</span>
-        <span>Dance</span>
-        <span>Food & Drink</span>
-        <span>Home & Garden</span>
-        <span>Music</span>
-        <span>Visual Arts</span>
-      </div>
+    <div class="navibar">
+      <span>Meta</span>
+      <span>About</span>
+      <span>Blog</span>
+      <span>Jobs</span>
+      <span>Help</span>
+      <span>API</span>
+      <span>Privacy</span>
+      <span>Terms</span>
+      <span>Top Accounts</span>
+      <span>Hashtags</span>
+      <span>Locations</span>
+      <span>Instagram Lite</span>
+      <span>Contact Uploading & Non-Users</span>
+      <span>Dance</span>
+      <span>Food & Drink</span>
+      <span>Home & Garden</span>
+      <span>Music</span>
+      <span>Visual Arts</span>
     </div>
-    <div
-      style="
-        color: grey;
-        padding: 10px;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 40px;
-      "
-    >
-      © 2022 Instagram from Meta
-    </div>
+    <div class="div-copy-right">© 2022 Instagram from Meta</div>
   </body>
 </html>
