@@ -1,3 +1,9 @@
+html {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .navibar span {
   color: gray;
   padding: 5px 10px;
